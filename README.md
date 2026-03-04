@@ -3,6 +3,14 @@ This is an app to sort a collection of characters in Discord's [Mudae bot](https
 It is loosely based on the work done by [LieutenantCrunch's Mudae Ranker](https://github.com/LieutenantCrunch/mudae-ranker),
 but this a new app, not a fork.
 
+## Usage
+- In discord, use `$mmai-s` to get a list of characters by series DMed to you.
+- Input the content from the DM into the app. (TODO)
+- Click "sort" to begin ranking. (TODO)
+- Rank the characters! (TODO)
+- Click "skip" to just add the character to the end of the list. (TODO)
+- After ranking, you can select individual characters to re-sort. (TODO)
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
