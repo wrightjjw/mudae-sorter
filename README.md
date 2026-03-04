@@ -1,3 +1,8 @@
+# Mudae Sorter
+This is an app to sort a collection of characters in Discord's [Mudae bot](https://mudae.net).
+It is loosely based on the work done by [LieutenantCrunch's Mudae Ranker](https://github.com/LieutenantCrunch/mudae-ranker),
+but this a new app, not a fork.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
