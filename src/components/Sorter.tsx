@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ParseInput from "./ParseInput";
 import type Character from "../types/character";
+import CharacterCard from "./CharacterCard";
 
 export default function Sorter() {
     const [chars, setChars] = useState<Character[]>([]);
@@ -10,7 +11,7 @@ export default function Sorter() {
             <ParseInput setChars={setChars} />
             <ul>
                 {chars.map(char => (
-                    <ol>{char.charName} - {char.seriesName}</ol>
+                    <CharacterCard character={char} />
                 ))}
             </ul>
         </>
