@@ -4,7 +4,7 @@ export default function Sorter({ character }: { character: Character }) {
 
     return (
         <div>
-            <img src={character.imageUrl} />
+            <img src={character.imageUrl} referrerPolicy="no-referrer" />
         </div>
     )
 }
