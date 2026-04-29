@@ -8,7 +8,10 @@ Baylan Skoll - https://mudae.net/uploads/3513168/NFyQf_B~nrOg2Lwpx.png
 
 ARMS - 2/18
 Ribbon Girl - https://mudae.net/uploads/5126491/CmiEVpG~oLl05Ij.png
-Twintelle - https://mudae.net/uploads/6720203/nOMwoVY~rxb5Qbi.png`;
+Twintelle - https://mudae.net/uploads/6720203/nOMwoVY~rxb5Qbi.png
+
+Fire Emblem Awakening - 1/5
+Chrom - https://mudae.net/uploads/2569835/Eo-rjmn~vofUOTy.png`;
 
   const expected: Character[] = [
     {
@@ -29,6 +32,13 @@ Twintelle - https://mudae.net/uploads/6720203/nOMwoVY~rxb5Qbi.png`;
       charName: "Twintelle",
       seriesName: "ARMS",
       imageUrl: "https://mudae.net/uploads/6720203/nOMwoVY~rxb5Qbi.png",
+      isRanked: false,
+      isSkip: false,
+    },
+    {
+      charName: "Chrom",
+      seriesName: "Fire Emblem Awakening",
+      imageUrl: "https://mudae.net/uploads/2569835/Eo-rjmn~vofUOTy.png",
       isRanked: false,
       isSkip: false,
     },

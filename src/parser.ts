@@ -16,7 +16,10 @@ export class Parser {
       {
         regex: /.* - \d*\/\d*/,
         callback: (line: string) => {
-          series = line.split("-")[0].trimEnd();
+          const match = line.match(/^(.*) - \d*\/\d*/);
+          if (match) {
+            series = match[1].trimEnd();
+          }
         },
       },
       {
@@ -54,9 +57,12 @@ export class Parser {
     line: string,
     series: string,
   ): Character {
-    const lineSplit = line.split("-");
-    const charName = lineSplit[0].trimEnd();
-    const imgUrl = lineSplit[1].trimStart();
+    const match = line.match(/^(.*) - (http.*)$/);
+    if (!match) {
+      throw new Error(`Invalid line format: ${line}`);
+    }
+    const charName = match[1].trimEnd();
+    const imgUrl = match[2].trimStart();
     return {
       charName: charName,
       seriesName: series,

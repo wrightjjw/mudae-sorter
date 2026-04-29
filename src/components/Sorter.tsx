@@ -8,11 +8,11 @@ export default function Sorter() {
     return (
         <>
             <ParseInput setChars={setChars} />
-            <ul>
+            <div className="card-list">
                 {chars.map(char => (
                     <ol>{char.charName} - {char.seriesName}</ol>
                 ))}
-            </ul>
+            </div>
         </>
     );
 }
