@@ -9,11 +9,11 @@ export default function Sorter() {
     return (
         <>
             <ParseInput setChars={setChars} />
-            <ul>
+            <div className="card-list">
                 {chars.map(char => (
                     <CharacterCard character={char} />
                 ))}
-            </ul>
+            </div>
         </>
     );
 }
